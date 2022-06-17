@@ -1,0 +1,32 @@
+&control
+    calculation='scf'
+    verbosity='high'
+    prefix='Ti'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/TiO/Ti/Ti.save'
+/
+&system
+    ibrav=4,
+    A=4.580, B=4.580, C=2.846,
+    cosab=-0.5,
+    nat=3,
+    ntyp=1,
+    nbnd=40,
+    ecutwfc=70,
+    occupations='smearing',
+    smearing='methfessel-paxton',
+    degauss=0.01,
+    tot_magnetization=0,
+    nspin=2,
+/
+&electrons
+/
+&ions
+/
+ATOMIC_SPECIES
+ Ti  47.867  Ti.upf
+ATOMIC_POSITIONS {crystal}
+ Ti -0.0000026511  0.0000026511 -0.0651353601
+ Ti  0.3333312450  0.6666687550  0.2499499677
+ Ti  0.6666714061  0.3333285939  0.5651853924
+K_POINTS (automatic)
+ 7 7 11 0 0 0

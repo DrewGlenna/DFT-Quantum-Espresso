@@ -1,0 +1,42 @@
+&control
+    calculation='vc-relax'
+    verbosity='high'
+    prefix='Ti'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/TiO/Ti/Ti.save'
+    nstep=1000,
+/
+&system
+    ibrav=4,
+    A=4.577, B=4.577, C=2.829,
+    cosab=-0.5,
+    nat=3,
+    ntyp=1,
+    nbnd=40,
+    ecutwfc=75,
+    occupations='smearing',
+    smearing='gaussian',
+    degauss=0.01,
+    tot_magnetization=0,
+    nspin=2,
+/
+&electrons
+  electron_maxstep=1000,
+  conv_thr=1.D-8,
+/
+&ions
+  ion_dynamics='bfgs',
+/
+&CELL
+  cell_dynamics='bfgs',
+  press=0.0,
+  press_conv_thr=0.001,
+  cell_dofree='ibrav',
+/
+ATOMIC_SPECIES
+ Ti  47.867  Ti.upf
+ATOMIC_POSITIONS {crystal}
+ Ti 0.0000 0.0000 0.0000 
+ Ti 0.3333 0.6667 0.2500
+ Ti 0.6667 0.3333 0.5000
+K_POINTS (automatic)
+ 7 7 11 0 0 0
