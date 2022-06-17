@@ -1,0 +1,41 @@
+&control
+    calculation='scf'
+    verbosity='high'
+    prefix='Li2O'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/Li2TiO3/Li2O/Li2O.save'
+/
+&system
+    ibrav=14,
+    A=4.61, B=4.61, C=4.61,
+    nat=12,
+    ntyp=2,
+    nbnd=60,
+    ecutwfc=75,
+    occupations='smearing',
+    smearing='methfessel-paxton',
+    degauss=0.01,
+    tot_magnetization=0,
+    nspin=2
+/
+&electrons
+/
+&ions
+/
+ATOMIC_SPECIES
+ Li   6.941  Li.upf
+ O   15.999  O.upf
+ATOMIC_POSITIONS {crystal}
+ Li            0.2499999801        0.2499999801        0.7500000199
+ Li            0.2499999801        0.7500000199        0.7500000199
+ Li            0.2499999801        0.7500000199        0.2499999801
+ Li            0.2499999801        0.2499999801        0.2499999801
+ Li            0.7500000199        0.2499999801        0.2499999801
+ Li            0.7500000199        0.7500000199        0.2499999801
+ Li            0.7500000199        0.7500000199        0.7500000199
+ Li            0.7500000199        0.2499999801        0.7500000199
+ O             0.0000000000        0.0000000000        0.0000000000
+ O             0.0000000000        0.5000000000        0.5000000000
+ O             0.5000000000        0.0000000000        0.5000000000
+ O             0.5000000000        0.5000000000        0.0000000000
+K_POINTS (automatic)
+ 5 5 5 0 0 0
