@@ -1,0 +1,39 @@
+ &control
+    calculation='scf'
+    verbosity='high'
+    prefix='eTiO'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/TiO/eTiO/eTiO.save'
+ /
+ &system
+    ibrav=4,
+    A=5.02, B=5.02, C=2.88,
+    cosab=-0.5,
+    nat=6,
+    ntyp=2,
+    nbnd=60,
+    ecutwfc=75,
+    occupations='smearing',
+    smearing='gaussian',
+    degauss=0.01,
+    lda_plus_u=.TRUE.,
+    lda_plus_u_kind=1,
+    Hubbard_U(1)=2,
+    tot_magnetization=2,
+    nspin=2
+/
+&electrons
+/
+&ions
+/
+ATOMIC_SPECIES
+ Ti  47.867  Ti.upf
+ O   15.999  O.upf
+ATOMIC_POSITIONS {crystal}
+ Ti 0.0000 0.0000 0.0000
+ Ti 0.3333 0.6667 0.5000
+ Ti 0.6667 0.3333 0.5000
+ O  0.0000 0.3940 0.0000
+ O  0.3940 0.0000 0.0000
+ O  0.6060 0.6060 0.0000
+K_POINTS (automatic)
+ 7 7 13 0 0 0
