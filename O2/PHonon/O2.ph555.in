@@ -1,0 +1,6 @@
+&inputph
+    prefix='O2',
+    amass=15.999,
+    trans=.true.
+ /
+5.0 5.0 5.0
