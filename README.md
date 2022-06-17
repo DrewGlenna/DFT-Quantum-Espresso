@@ -1,0 +1,2 @@
+# DFT-Quantum-Espresso
+This work consists of kinetic energy convergence, k-point convergence, variable cell and atoms relaxations, total energy, electron and hole mobility, vibrational free energy, and electronic free energy calculations of varies compounds. Some of the work was completed during my Solid State Physics course and the rest was my research. You are free to use the input files as you wish.
