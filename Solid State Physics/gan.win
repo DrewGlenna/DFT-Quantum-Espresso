@@ -1,0 +1,25 @@
+begin projections
+ Ga:sp3
+ N:p
+end projections
+ exclude_bands = 1-12                                                                                                                                                                                                                                            
+num_wann =  14
+iprint =   3
+dis_win_max =    25.500000000000
+dis_froz_max =    14.500000000000
+num_iter =    1500
+write_bvec = .true.
+ bands_plot = .true.
+ begin kpoint_path
+ G 0.00 0.00 0.00 M 0.50 0.00 0.00
+ G 0.00 0.00 0.00 K 0.33333333333 0.33333333333 0.00
+ G 0.00 0.00 0.00 A 0.00 0.00 0.50
+ end kpoint_path
+ bands_plot_format = gnuplot
+ guiding_centres = .true.
+ dis_num_iter      = 1000
+ num_print_cycles  = 10
+ dis_mix_ratio     = 1.0
+ conv_tol = 1E-8
+ conv_window = 4
+ write_hr = .true.
