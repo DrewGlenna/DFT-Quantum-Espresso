@@ -1,0 +1,15 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=4
+
+
+cd "$SLURM_SUBMIT_DIR"
+
+echo running
+source /usr/modules/init/bash
+module load quantum-espresso
+pw.x <TiO.ecut70.in> TiO.ecut70.out
+pw.x <TiO.ecut75.in> TiO.ecut75.out
+sleep 30
+echo finished
