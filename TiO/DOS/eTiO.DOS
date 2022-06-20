@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=6
+
+
+cd "$SLURM_SUBMIT_DIR"
+
+echo running
+source /usr/modules/init/bash
+module load quantum-espresso
+pw.x <eTiO.V5a.in> eTiO.V5a.out
+pw.x <eTiO.nscf.in> eTiO.nscf.out
+dos.x <eTiO.dos.in> eTiO.dos.out
+sleep 30
+echo finished

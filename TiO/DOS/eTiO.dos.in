@@ -1,0 +1,7 @@
+&dos
+    prefix='eTiO',
+    fildos='eTiOdos.dat',
+    Emin=6.0,
+    Emax=18.0,
+    DeltaE=0.001,
+/
