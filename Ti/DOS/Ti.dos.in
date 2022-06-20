@@ -1,0 +1,7 @@
+&dos
+    prefix='Ti',
+    fildos='Tidos.dat',
+    Emin=7.0,
+    Emax=16.0,
+    DeltaE=0.001,
+/

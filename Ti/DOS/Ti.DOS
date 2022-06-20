@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=4
+
+
+cd "$SLURM_SUBMIT_DIR"
+
+echo running
+source /usr/modules/init/bash
+module load quantum-espresso
+pw.x <Ti.V4.in> Ti.V4.out
+pw.x <Ti.nscf.in> Ti.nscf.out
+dos.x <Ti.dos.in> Ti.dos.out
+sleep 30
+echo finished
