@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=30
+
+
+cd "$SLURM_SUBMIT_DIR"
+
+echo running
+source /usr/modules/init/bash
+module load quantum-espresso
+pw.x <Li2TiO3.scf.in> Li2TiO3.scf.out
+pw.x <Li2TiO3.nscf.in> Li2TiO3.nscf.out
+dos.x <Li2TiO3.dos.in> Li2TiO3.dos.out
+sleep 30
+echo finished

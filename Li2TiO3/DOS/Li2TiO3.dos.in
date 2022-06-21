@@ -1,0 +1,7 @@
+&dos
+    prefix='Li2TiO3',
+    fildos='Li2TiO3dos.dat',
+    Emin=1.0,
+    Emax=12.0,
+    DeltaE=0.001,
+/
