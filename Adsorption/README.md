@@ -1,0 +1,2 @@
+# CO2 Adsorption on Cu Surface
+The adsorption energy of CO2 on Cu (fcc111) surface was calculated from first-principles. A python script was written using the Atomic Simulation Environment (ASE) to set up the 2x2x4 layer Cu (fcc111) surface. Quantum Espresso was used to conduct the kinetic energy cutoff convergence, k-point convergence, variable cell and atoms relaxations, total energy, and zero point energy calculations with PBE-D2 (Van der Waals). Then the adsorption energy was calculated with Eads = E(CO2+Cu111) - (E(CO2)+E(Cu111)). 

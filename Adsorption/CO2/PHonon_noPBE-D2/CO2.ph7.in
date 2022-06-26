@@ -1,0 +1,7 @@
+&inputph
+    prefix='CO2',
+    amass(1)=12.011,  
+    amass(2)=15.999,
+    trans=.true.
+ /
+7.0 7.0 7.0
