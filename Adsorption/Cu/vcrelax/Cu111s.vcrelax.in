@@ -2,7 +2,7 @@
     calculation='vc-relax'
     verbosity='high'
     prefix='Cu'
-    pseudo_dir='/home/drewglenna/Documents/Espresso/q-e-qe-6.8/pseudo/PAW'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/Adsorption/Cu/Cu.save'
     nstep=1000,
  /
  &system

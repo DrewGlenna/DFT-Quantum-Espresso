@@ -2,7 +2,7 @@
     calculation='vc-relax'
     verbosity='high'
     prefix='Cu'
-    pseudo_dir='/home/drewglenna/Documents/Espresso/q-e-qe-6.8/pseudo/PAW'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/Adsorption/Cu/Cu.save'
     nstep=1000,
  /
  &system
@@ -10,13 +10,13 @@
     A=3.62, B=3.62, C=3.62,
     nat=4,
     ntyp=1,
-    nbnd=80,
     ecutwfc=80,
     occupations='smearing',
     smearing='gaussian',
     degauss=0.01,
     tot_magnetization=0,
     nspin=2,
+    vdw_corr='DFT-D',
 /
 &electrons
   electron_maxstep=1000,
@@ -28,7 +28,7 @@
 &CELL
   cell_dynamics='bfgs',
   press=0.0,
-  press_conv_thr=0.001,
+  press_conv_thr=0.01,
   cell_dofree='ibrav',
 /
 ATOMIC_SPECIES

@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -p long
+#SBATCH -C ceph
+#SBATCH --nodes=4
+#SBATCH --ntasks-per-node=6
+#SBATCH --cpus-per-task=1
+
+
+cd "$SLURM_SUBMIT_DIR"
+
+echo running
+source /usr/modules/init/bash
+module load quantum-espresso
+pw.x <Cu111s.vcrelax.in> Cu111s.vcrelax.out
+pw.x <Cu.vcrelax.in> Cu.vcrelax.out
+sleep 30
+echo finished
