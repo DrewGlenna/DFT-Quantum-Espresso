@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH -p reg
+#SBATCH -C ceph
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=12
+#SBATCH --cpus-per-task=1
+
+
+cd "$SLURM_SUBMIT_DIR"
+
+echo running
+source /usr/modules/init/bash
+module load quantum-espresso
+pw.x <CO2Cuontop.relax.in> CO2Cuontop.relax.out
+pw.x <CO2Cubridge.relax.in> CO2Cubridge.relax.out
+pw.x <CO2Cufcc.relax.in> CO2Cufcc.relax.out
+sleep 30
+echo finished
