@@ -2,7 +2,7 @@
     calculation='relax'
     verbosity='high'
     prefix='CO2Cufcc'
-    pseudo_dir='/home/drewglenna/Documents/Espresso/q-e-qe-6.8/pseudo/PAW'
+    pseudo_dir='/mnt/ceph/glen3534/Prep/Adsorption/CO2Cu/CO2Cu.save'
 /
 &system
     ibrav=14,
@@ -47,4 +47,4 @@ ATOMIC_POSITIONS {Angstrom}
  C   1.2763277400417183 0.7368881642872727 9.2527034153236478
  O   2.4470177400400000 0.7368881642872727 9.2527034153236478
 K_POINTS (automatic)
- 7 7 1 0 0 0
+ 4 4 1 0 0 0
