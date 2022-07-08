@@ -1,0 +1,9 @@
+&inputph
+    prefix='CO2Cuontop',
+    amass(1)=63.546,  
+    amass(2)=12.011,
+    amass(3)=15.999,
+    trans=.true.
+    ldisp=.true.
+    nq1=4.0, nq2=4.0, nq3=1.0
+ /
