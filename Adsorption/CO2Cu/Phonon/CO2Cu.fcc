@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -p reg
+#SBATCH -p long
 #SBATCH -C ceph
 #SBATCH --nodes=1
 #SBATCH --ntasks-per-node=24

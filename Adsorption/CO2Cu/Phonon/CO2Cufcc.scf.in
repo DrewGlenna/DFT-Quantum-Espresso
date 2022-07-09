@@ -14,8 +14,6 @@
     occupations='smearing',
     smearing='gaussian',
     degauss=0.01,
-    tot_magnetization=0,
-    nspin=2,
     vdw_corr='DFT-D',
 /
 &electrons
