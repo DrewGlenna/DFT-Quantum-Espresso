@@ -1,6 +1,8 @@
 &inputph
     prefix='Cuslab',
     amass(1)=63.546,  
+    alpha_mix(1) = 0.3
+    alpha_mix(2) = 0.1    
     trans=.true.,
     ldisp=.true.,
     nq1=4,
