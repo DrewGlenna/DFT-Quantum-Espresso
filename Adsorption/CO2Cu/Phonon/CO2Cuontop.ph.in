@@ -3,6 +3,8 @@
     amass(1)=63.546,  
     amass(2)=12.011,
     amass(3)=15.999,
+    alpha_mix(1) = 0.3
+    alpha_mix(2) = 0.1
     trans=.true.,
     ldisp=.true.,
     nq1=4,
