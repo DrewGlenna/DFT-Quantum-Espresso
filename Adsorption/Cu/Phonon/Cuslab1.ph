@@ -14,7 +14,7 @@ source /usr/modules/init/bash
 module load quantum-espresso
 module load openmpi/2.1.6
 ulimit -l unlimited
-mpirun -np 64 pw.x <Cuslab.scf.in> Cuslab.scf.out
-mpirun -np 64 ph.x <Cuslab.ph.in> Cuslab.ph.out
+mpirun -np 64 pw.x <Cuslab1.scf.in> Cuslab1.scf.out
+mpirun -np 64 ph.x <Cuslab1.ph.in> Cuslab1.ph.out
 sleep 30
 echo finished
