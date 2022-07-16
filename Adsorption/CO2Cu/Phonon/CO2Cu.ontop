@@ -1,9 +1,10 @@
 #!/bin/bash
 #SBATCH -p long
 #SBATCH -C ceph
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=24
+#SBATCH --nodes=2
+#SBATCH --ntasks-per-node=32
 #SBATCH --cpus-per-task=1
+#SBATCH --mem-per-cpu=1000
 
 
 cd "$SLURM_SUBMIT_DIR"
@@ -13,7 +14,7 @@ source /usr/modules/init/bash
 module load quantum-espresso
 module load openmpi/2.1.6
 ulimit -l unlimited
-mpirun -np 24 pw.x <CO2Cuontop.scf.in> CO2Cuontop.scf.out
-mpirun -np 24 ph.x <CO2Cuontop.ph.in> CO2Cuontop.ph.out
+mpirun -np 64 pw.x <CO2Cuontop.scf.in> CO2Cuontop.scf.out
+mpirun -np 64 ph.x <CO2Cuontop.ph.in> CO2Cuontop.ph.out
 sleep 30
 echo finished

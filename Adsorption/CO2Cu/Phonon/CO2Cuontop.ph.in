@@ -7,7 +7,7 @@
     alpha_mix(2) = 0.1
     trans=.true.,
     ldisp=.true.,
-    nq1=4,
-    nq2=4,
+    nq1=1,
+    nq2=1,
     nq3=1,
  /
